@@ -1,7 +1,7 @@
 import React from "react";
-import images from "../public/Slide1.jpg";
-import images1 from "../public/Slide2.jpg";
-import images2 from "../public/Slide3.jpg";
+import images from "../assests/Slide1.jpg";
+import images1 from "../assests/Slide2.jpg";
+import images2 from "../assests/Slide3.jpg";
 const Images = () => {
   return (
     <div className="image-component">
