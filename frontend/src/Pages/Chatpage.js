@@ -5,6 +5,7 @@ import { ChatState } from "../Context/ChatProvider";
 import SideDrawer from "../components/miscellanoues/SideDrawer";
 import MyChats from "../components/MyChats";
 import ChatBox from "../components/ChatBox";
+import Footer from "./Footer";
 const Chatpage = () => {
   const { user } = ChatState();
   const [fetchAgain, setFetchAgain] = useState(false);
@@ -23,6 +24,7 @@ const Chatpage = () => {
           <ChatBox fetchAgain={fetchAgain} setFetchAgain={setFetchAgain} />
         )}
       </Box>
+      <Footer />
     </div>
   );
 };

@@ -61,7 +61,8 @@ const Login = () => {
       setUser(data);
       localStorage.setItem("userInfo", JSON.stringify(data));
       setloading(false);
-      navigate("/chat");
+      // navigate("/chat");
+      navigate("/home");
     } catch (error) {
       toast({
         title: "Error Occured!",
@@ -76,7 +77,6 @@ const Login = () => {
   };
 
   return (
-    
     <VStack>
       <FormControl id="email" isRequired>
         <FormLabel>Email</FormLabel>

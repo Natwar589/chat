@@ -30,6 +30,8 @@ import UserListItem from "../UserAvatar/UserListItem";
 import { getSender } from "../../Config/ChatLogics";
 import { Effect } from "react-notification-badge";
 import NotificationBadge from "react-notification-badge/lib/components/NotificationBadge";
+import Logout from "./Logout";
+import NavBar from "../../Pages/NavBar";
 function SideDrawer() {
   const toast = useToast();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -112,11 +114,12 @@ function SideDrawer() {
 
   return (
     <>
+      <NavBar />
       <Box
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        bg="#00a7b7"
+        bg="transparent"
         color="black"
         w="100%"
         p="5px 10px 0px 5px"
@@ -124,16 +127,14 @@ function SideDrawer() {
         borderColor="transparent"
       >
         <Tooltip label="Search Users To Chat" hasArrow placement="bottom-end">
-          <Button variant="ghost" onClick={onOpen}>
+          <Button variant="ghost" onClick={onOpen} className="searchField">
             <i className="fas fa-search"></i>
             <Text display={{ base: "none", md: "flex" }} px="4">
               Search User
             </Text>
           </Button>
         </Tooltip>
-        <Text fontSize="2xl" fontFamily="serif">
-          ChatMe
-        </Text>
+
         <div>
           <Menu>
             <MenuButton p={1}>
@@ -160,7 +161,7 @@ function SideDrawer() {
               ))}
             </MenuList>
           </Menu>
-          <Menu>
+          {/* <Menu>
             <MenuButton
               bg="#d47f7f"
               as={Button}
@@ -181,7 +182,8 @@ function SideDrawer() {
               <MenuDivider />
               <MenuItem onClick={logoutHandler}>LogOut</MenuItem>
             </MenuList>
-          </Menu>
+          </Menu> */}
+          {/* <Logout user={user} /> */}
         </div>
       </Box>
 
