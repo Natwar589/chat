@@ -1,0 +1,25 @@
+1.   install node,postman
+2.   install express through npm
+3.   create a react app through npm
+4.   install chkra-ui for style purpose through npm
+5.   fetch data through axios: it response through obj
+
+
+   Axios: Axios is a Javascript library used to make HTTP requests from node.
+   js or XMLHttpRequests from the browser and it supports the Promise
+   API that is native to JS ES6. It can be used intercept HTTP requests and responses 
+   and enables client-side protection against XSRF.
+
+6. mongoose schema where new term (type: mongoose.Schema.Types.ObjectId)
+7. use chakra-ui instead of bootstarp.
+8.  frontend-> index->userRoutes->usercontollers(userModels)->database
+9.  jsonwebToken is use for login purpose.
+10   bycrptjs is use for bycrpt and encrypt
+11 for insert pic we use cloudenery
+
+12 regex is used for query operations;
+13 Populate
+
+
+
+  
